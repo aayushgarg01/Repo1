@@ -1,0 +1,23 @@
+name: Power Runner Test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-power-runner:
+    runs-on: [ltcblue122-lp2]
+
+    steps:
+      - name: Show system info
+        run: |
+          echo "Runner is executing on:"
+          uname -a
+          echo "Architecture:"
+          uname -m
+
+      - name: Print environment
+        run: |
+          whoami
+          pwd
+          ls -la

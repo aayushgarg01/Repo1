@@ -6,7 +6,7 @@ on:
 
 jobs:
   test-power-runner:
-    runs-on: [ltcblue122-lp2]
+    runs-on: [self-hosted, Linux, PPC64LE]
 
     steps:
       - name: Show system info
